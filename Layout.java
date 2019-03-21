@@ -12,7 +12,7 @@ import java.util.Objects;
 
 /**
  *
- * @author Arthur
+ * @author Arthur Angelici
  */
 public class Layout {
     //Criei matriz para representar arranjo fisico
