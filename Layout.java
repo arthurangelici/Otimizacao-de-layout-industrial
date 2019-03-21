@@ -40,7 +40,7 @@ public class Layout {
         
     }
     
-    //Outro construtor da classe que criar o layout como ja esta definido no seu desenho e os room emptys sao onde serao alocados
+    //Outro construtor da classe que criar o layout como ja esta definido e os room emptys sao onde serao alocados
     public Layout() {
 
         //nao precisa colocar externo, apenas referencia com a linha 0
@@ -146,7 +146,7 @@ public class Layout {
 
     }
 
-      // Aqui eu coloquei a funcao objetivo, ou seja utilizei as restriçoes e criei pesos para elas
+      // A funcao objetivo, ou seja utilizando as restriçoes e criei pesos para elas
     // Por exemplo areas de qualidades estarem perto tem peso 10
     // qualidade estar perto de fabricacao tem peso 5 ..
     // com isso o objetivo e minimizar esse valor para obter as menores distancias
@@ -170,13 +170,10 @@ public class Layout {
         +getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL), searchPosition(Estados.FABRICACAO_ESTRUTURAL3))
         +getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL2), searchPosition(Estados.FABRICACAO_ESTRUTURAL3));
                 
-        
         distanceFabricacaoAcessoExterno = (getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL), searchPosition(Estados.ACESSO_EXTERNO)))
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL3), searchPosition(Estados.ACESSO_EXTERNO)))
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL2), searchPosition(Estados.ACESSO_EXTERNO)));
         
-        
-        //talvez tenha que colocar o menor
         distanceFabricacaoQualidade = (getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL), searchPosition(Estados.QUALIDADE)))
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL3), searchPosition(Estados.QUALIDADE)))
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL2), searchPosition(Estados.QUALIDADE)))
@@ -184,7 +181,6 @@ public class Layout {
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL3), searchPosition(Estados.QUALIDADE2)))
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL2), searchPosition(Estados.QUALIDADE2)));
        
-        
         distanceEletricistaAcessoInterno = getDistance(searchPosition(Estados.ELETRICISTAS), searchPosition(Estados.ACESSO_INTERNO)) +
                 getDistance(searchPosition(Estados.ELETRICISTAS2), searchPosition(Estados.ACESSO_INTERNO));
         
@@ -195,7 +191,6 @@ public class Layout {
         +(getDistance(searchPosition(Estados.FABRICACAO_ESTRUTURAL2), searchPosition(Estados.EXTERNO)));
                 
         distancePlanejamentoExterno =getDistance(searchPosition(Estados.PLANEJAMENTO), searchPosition(Estados.ACESSO_EXTERNO));
-        
         
         
         energyTotal = 10*distanceEletricistas + 10*distanceFabricacao + 10*distanceQualidade + 5*distanceEletricistaAcessoInterno 
