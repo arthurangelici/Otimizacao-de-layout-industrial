@@ -7,7 +7,7 @@ package simulatedannealing;
 
 /**
  *
- * @author Arthur
+ * @author Arthur Angelici
  */
 
 // Aqui sao definidos todos os estados que possuem no arranjo
