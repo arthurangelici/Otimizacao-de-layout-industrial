@@ -1,2 +1,2 @@
 # Otimizacao-de-layout-industrial
-Otimização layout industrial/empresarial utilizando Simulated annealing para melhorar eficiência de processos
+Otimização layout industrial/empresarial utilizando Simulated Annealing para melhorar eficiência de processos
