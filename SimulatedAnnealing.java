@@ -7,7 +7,7 @@ package simulatedannealing;
 
 /**
  *
- * @author Arthur
+ * @author Arthur Angelici
  */
 public class SimulatedAnnealing {
 
